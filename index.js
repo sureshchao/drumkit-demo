@@ -8,9 +8,7 @@ audioFiles.forEach(function (elem) {
 
 for (let i = 0; i < drumKit.length; ++i) {
     drumKit[i].addEventListener("click", function () {
-        alert("playing " + i);
-
-        this.style.color = "white";
+      this.style.color = "white";
         if (i < audioObjs.length)
             audioObjs[i].play();
     });
